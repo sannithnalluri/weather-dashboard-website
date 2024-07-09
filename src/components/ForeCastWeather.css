@@ -1,0 +1,47 @@
+/* ForecastWeather.css */
+
+.forecast-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .forecast-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .forecast-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .forecast-items {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+    gap: 16px; /* Adds space between items */
+  }
+  
+  .forecast-item {
+    flex: 1 1 calc(33.33% - 16px); /* Responsive flex basis for 3 items per row, subtracting the gap */
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .forecast-item.even {
+    background-color: #e3f2fd; /* Light blue */
+  }
+  
+  .forecast-item.odd {
+    background-color: #f1f8e9; /* Light green */
+  }
+  
+  .forecast-item:hover {
+    transform: translateY(-5px);
+  }
+  
